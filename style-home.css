@@ -1226,7 +1226,7 @@ header a:hover      { color: #B86200; }
 .faq-banner {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), #040A03),
-        url('images/rizen-group/cover-images/lushfield-1.png') center/cover no-repeat;
+        url('images/rizen-group/cover-images/lushfield.png') center/cover no-repeat;
     background-blend-mode: darken;
     background-attachment: fixed;
     background-size: cover;
