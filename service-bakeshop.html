@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>7K Bakeshop</title>
+
+  <link rel="stylesheet" href="style-platform.css"  />
+  <link rel="stylesheet" href="style-main.css"      />
+  <link rel="stylesheet" href="style-service-bakeshop.css"  />
+  
+</head>
+
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0">
+    </script>
+    
+    <!-- HEADER -->
+    <header>
+        <a href="home.html" ><h1> HOME      </h1> </a>
+      <nav>
+        <a href="#about"    ><p>  ABOUT     </p>  </a>
+        <a href="#contact"  ><p>  CONTACT   </p>  </a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <a href="https://www.facebook.com/seven.keys.367071/" target="_blank" rel="noopener">
+            <img src="logos/Rizen-7K.jpg" alt="7K Bakeshop Logo">
+          </a>
+        </div>
+        <h3>7K BAKESHOP</h3>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <img src="images/service-bakeshop/pastry-square.png" class="bg-pastry" style="top: -5rem; left: -5rem;" />
+      <div class="about-top"></div>
+      <div class="about-box">
+        <h3>ABOUT US</h3>
+          <p>       At Seven Keys Bakeshop, we believe that every day deserves a fresh start—and a warm loaf. Nestled in the heart of Lambaguhon, Iligan City, we’re a neighborhood bakery dedicated to serving freshly baked bread, pastries, and sweet treats that bring comfort and joy to every home.
+          <br><br>  Whether you're picking up your morning pandesal, craving our signature Crema Loaf, or just stopping by for something sweet, we’re here to share a slice of happiness—one bake at a time.
+                    We’re proud to be part of the local community, and even prouder to be your go-to for warm bread and friendly service.
+          <br><br>  Freshly baked. Locally loved. Always from the heart..</p>
+      </div>
+      <img src="images/service-bakeshop/pastry-bagguettes.png" class="bg-pastry" style="bottom: -5rem; right: -5rem;" />
+    </section>
+
+    <section class="media">
+        <div class="media-box">
+          <div class="fb-video" 
+              data-href="https://www.facebook.com/reel/3877055495939313/" 
+              data-width="500" 
+              data-show-text="false">
+          </div>
+        </div>
+    </section>
+
+    <div class="pastry-section">
+      <img src="images/service-bakeshop/pastry-goldencrust.png" class="bg-pastry-2" style="width: 7.5rem; height: 7.5rem; top:-10rem; right: 5rem;" />
+    </div>
+
+    <section class="contact" id="contact">
+      <img src="images/service-bakeshop/pastry-donut.png"      class="bg-pastry"   style="z-index: 3; top: -6rem;     left: -5rem;"/>
+      <img src="images/service-bakeshop/pastry-croissant.png"  class="bg-pastry-2" style="z-index: 4; bottom: -3rem;  right: -5rem;" />
+      
+      <h3 style="z-index: 5; font-size: 2rem !important; margin-block-start: -3rem; margin-block-end: 2rem;">
+      CONTACT US
+      </h3>
+      <div class="box-left" onclick="this.classList.toggle('active')"><div class="contact-box">
+        <div class="contact-top"></div>
+        <div class="contact-text">
+          <h3> NUMBER </h3>
+          <p>0963 998 9363</p>
+          <p>0936 713 5898</p>
+        </div>
+      </div></div>
+
+      <div class="box-right" onclick="this.classList.toggle('active')"><div class="contact-box">
+        <div class="contact-top"></div>
+        <div class="contact-text">
+        <h3> LOCATION </h3>
+        <p> Prk. Rosal, Lambaguhon</p>
+        <p>San Roque, Iligan City</p>
+      </div></div>
+    </section>
+
+  <!-- BOTTOM -->
+  <footer>
+    <p>&copy; Rizen Group Property Services. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rizen Group Property Services Inc</title>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style-platform.css"  />
+  <link rel="stylesheet" href="style-main.css"      />
+  <link rel="stylesheet" href="style-home.css"      />
+  <link rel="stylesheet" href="style-rizen.css"     />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+        <a href="home.html" ><h1> HOME      </h1> </a>
+      <nav>
+        <a href="#listings" ><p>  LISTINGS  </p>  </a>
+        <a href="#about"    ><p>  ABOUT     </p>  </a>
+        <a href="#services" ><p>  SERVICES  </p>  </a>
+        <a href="#contact"  ><p>  CONTACT   </p>  </a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="banner">
+        <h3>"Land. Build. Grow. We Handle It All."</h3>
+        <p>Creating opportunities, building your future.</p>
+
+        <button class="button-explore" onclick="document.querySelector('#listings').scrollIntoView({ behavior: 'smooth' })">
+          <h1>EXPLORE</h1>
+        </button>
+      </div>  
+    </section>
+
+    <!-- HERO BOX -->
+    <div class="box-border">
+      <div class="box-logo">
+          <img src="logos/Rizen-Main.png" alt="Rizen Logo">
+      </div>
+      <div class="hero-box">
+        <div class="hero-text">
+          <p>Experience top tier property management—and a full suite of support services—with Rizen Group Property Services, Inc. Our committed team keeps every asset in prime condition, delivering dependable, professional care that elevates both value and satisfaction. Explore everything we offer and start partnering with us today.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LISTINGS -->
+    <div class="section-strip" id="listings">
+      <nav>
+        <div class="main-nav">
+          <p data-target="about-overview"   >OUR PROPERTIES   </p>
+        </div>
+        <div class="other-navs">
+          <p data-target="about-services" >ALL     </p>
+          <p data-target="about-vision"   >RAW LOT </p>
+          <p data-target="about-mission"  >RFO     </p>
+          <p data-target="about-lots"     >PRESALE </p>
+        </div>
+        
+      </nav>
+    </div>
+    
+    <section class="listings">
+      <div class="listing-cards">
+      
+        <div class="listing-card">
+          <div class="listing-image">
+            <img src="images/rizen-group/listings/Lumbia/entrance-1.jpg">
+          </div>
+          <div class="listing-info">
+            <h3>LUMBIA RAW LOT</h3>
+            <p>Raw lot in Fresno Parkview Subdivision</p>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <div class="listing-image">
+            <img src="images/rizen-group/listings/OhanaResort/pool-2.jpg">
+          </div>
+          <div class="listing-info">
+            <h3>OHANA RESORT</h3>
+            <p>Ohana Resort with garden and pool</p>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <div class="listing-image">
+            <img src="images/rizen-group/listings/Palao-H&L/outside-1.jpg">
+          </div>
+          <div class="listing-info">
+            <h3>PALAO HOUSE & LOT</h3>
+            <p>Spacious residential house and lot with 2 bedrooms</p>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <div class="listing-image">
+            <img src="images/rizen-group/listings/BagongSilang-H&L/outside-1.jpg">
+          </div>
+          <div class="listing-info">
+            <h3>BAGONG SILANG HOUSE & LOT</h3>
+            <p>Residential house and lot with Sari Sari store</p>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="see-more">
+        <button class="button-see-more">SEE MORE</button>
+      </div>
+      
+    </section>
+
+
+    <!-- ABOUT -->
+    <div class="section-strip" id="about" style="z-index: 2; margin-block-end: -2.5px; height: 3rem;">
+      <nav>
+        <div class="main-nav">
+          <p data-target="about-overview" > OVERVIEW      </p>
+        </div>
+        <div class="other-navs">
+          <p data-target="about-services" > SERVICES      </p>
+          <p data-target="about-vision"   > VISION        </p>
+          <p data-target="about-mission"  > MISSION       </p>
+          <p data-target="about-lots"     > LOT PROJECTS  </p>
+        </div>
+      </nav>
+    </div>
+
+    <div class="about" style="margin-block-end: -5rem; align-content: center;">
+
+      <!-- ABOUT OVERVIEW -->
+      <div class="about-overview">
+        <div class="overview-label">
+            <h3>ABOUT OUR COMPANY</h3>
+        </div>
+        <div class="overview-box">
+          <div class="overview-text">
+            
+            <p>Founded in Iligan City on October 8, 2022, initially as a sole proprietorship
+              before transitioning into a corporation in 2023. It is now a SEC-registered
+              company specializing in real estate sales, rentals, and management, focusing
+              on low-cost raw lots, farm lots, residential, and commercial properties.
+              <br><br>
+              In addition, the company also handles service properties such as rights of way, stations,
+              platforms, offices, and parking lots.</p>
+          </div>
+
+          <div class="overview-agent">
+            <img src="images/company/png/employee-1.png" class="agent-image active">
+            <img src="images/company/png/employee-2.png" class="agent-image">
+            <img src="images/company/png/employee-3.png" class="agent-image">
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- ABOUT SERVICES -->
+      <div class="about-services" style="display: none; align-items: center;">
+        <div class="about-service-box">
+
+          <div class="about-service-text">
+            <div class="about-service-title">
+              <h3>ABOUT OUR SERVICES</h3>
+            </div>
+
+            <div class="about-service-pharagraph">
+              <p>
+              Our company is proudly diversified, offering services across several key industries.
+              We specialize in real estate services—including buying, selling, leasing, and
+              property management—while also operating a number of other local businesses that
+              serve everyday needs and community development.
+              <br><br>
+              Rizen Megacorp offers services like house construction, vehicle rentals, trucking,
+              backfill, backhoe services, and legal services. With plans for expansion across
+              Mindanao and nationwide, the company is committed to client satisfaction and industry
+              growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-service-icons"    >
+            <div class="about-service-icon" style="width: 60%; margin-top: 0px;   margin-right: 10%;">
+              <img src="logos/Rizen-Main.png" >
+            </div>
+            <div class="about-service-icon" style="width: 35%; margin-top: -20%;  margin-left: 50%;">
+              <img src="logos/Rizen-8K.png" >
+            </div>
+            <div class="about-service-icon" style="width: 20%; margin-top: 5%;    margin-left: 0%;">
+              <img src="logos/Rizen-Legal.png" >
+            </div>
+            <div class="about-service-icon" style="width: 30%; margin-top: -5%;   margin-right: 40%;">
+              <img src="logos/Rizen-7K.jpg" >
+            </div>
+            <div class="about-service-icon" style="width: 50%; margin-top: -10%;  margin-left:  35%;">
+              <img src="logos/Rizen-Rental-Silver.png" >
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ABOUT VISION -->
+      <div class="about-vision" style="display: none;">
+
+        <div class="about-vision-pin">
+          <div class="pin-logo"><img src="logos/Rizen-Main.png"></div>
+          <div class="location-clip"></div>
+        </div>
+
+        <div class="about-vision-text">
+          <div class="about-vision-title"><h3>VISION</h3></div>
+          <div class="about-vision-paragraph">
+            <p>
+              To be the yardstick in affordable land development, earning the trust and
+              preference of buyers as their first choice. Through strategic partnerships
+              in retail and outsourcing businesses, we will continuously innovate to
+              deliver excellence, creating meaningful, lasting impacts on communities
+              are humanity as a whole.
+              <br><br>
+              Our commitment to affordable, sustainable products, services, and real
+              estate development will empower individuals and foster vibrantcommunities,
+              ensuring a better future for generations to come.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ABOUT MISSION -->
+      <div class="about-mission" style="display: none;">
+
+        <div class="about-vision-pin">
+          <div class="pin-logo"><img src="logos/Rizen-Main.png"></div>
+          <div class="location-clip"></div>
+        </div>
+
+        <div class="about-vision-text">
+          <div class="about-vision-title"><h3>MISSION</h3></div>
+          <div class="about-vision-paragraph">
+            <p>
+              To product and establish what buyers need:
+              <br><br>
+              1. To provide high-quality, affordable lands and master-planned,
+              freestanding communities in prime, strategic locations.
+              <br><br>
+              2. To offer and support salesforce services, delivering tailored
+              solutions to meet client needs.
+              <br><br>
+              3. To foster sustainable development by integrating innovative
+              solutions and exceptional customer service, ensuring long-term
+              value and growth for our communities and clients.
+              <br><br>
+              4. To deliver a diverse range of high-quality products and
+              services through strategic partnerships with trusted outsourcing
+              and retial providers, ensuring accessibility, affordability, and
+              excellence for all customers.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- ABOUT LOTS -->
+      <div class="about-lots" style="display: none;">
+
+        <div class="about-lots-text">
+
+          <div class="about-lots-title">
+            <h3>OUR LOT PROJECTS</h3>
+          </div>
+
+          <div class="about-lots-description">
+            <p>
+              We specialize in offering a wide range of affordable raw lots suited for farming, residential, and future development needs.
+              Our projects span across key areas in Iligan City and nearby regions, providing accessible and secure property investment opportunities.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="lot-projects-list">
+
+          <div class="lot-project-card" style="background-image: url('images/rizen-group/lot-projects/bonbon.jpg');">
+            <h4>BON BON LOT</h4>
+            <ul>
+              <li>Size: 250-260 sqm</li>
+              <li>Location: P13, BonBon, Iligan City</li>
+            </ul>
+          </div>
+
+          <div class="lot-project-card" style="background-image: url('images/rizen-group/lot-projects/lambaguhon.jpg');">
+            <h4>LAMBAGUHON LOT</h4>
+            <ul>
+              <li>Type: High End Subdivision</li>
+              <li>Location: Purok Fire Tree, Lambaguhon, San Roque, Iligan City</li>
+            </ul>
+          </div>
+
+          <div class="lot-project-card" style="background-image: url('images/rizen-group/lot-projects/caluda.jpg');">
+            <h4>CALUDA LOT</h4>
+            <ul>
+              <li>Size: 318 sqm</li>
+              <li>Location: Sitio Caluda, Digkilaan</li>
+            </ul>
+          </div>
+
+          <button class="view-more-btn">View More Projects</button>
+
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- SERVICES -->
+    <div class="section-strip" id="services" style="justify-content: center; margin-block-end: 0;"> <p>SERVICES WE OFFER</p> </div>
+    <!-- SERVICE SLIDE SHOW -->
+    <section id="services"></section> <section class="services">
+      <div class="service-slider"> <div class="slide-border"></div>
+        <div class="service-slides">
+
+          <!-- RIZEN GROUP -->
+          <div class="service-slide active" style="background-image: url('images/rizen-group/service-group.png');">
+            <div class="service-slide-content">
+              <div class="service-logo"><img src="logos/Rizen-Group.png" /></div>
+              <h3>Rizen Group</h3>
+              <p>We help clients find the perfect property, whether for residential,
+                commercial, or agricultural use. our team ensures secure transactions
+                and profitable investments.
+              </p>
+            </div>
+          </div>
+
+          <!-- RIZEN LEGAL -->
+          <div class="service-slide" style="background-image: url('images/service-legal/service-legal.png');">
+            <a href="service-legal.html" class="service-slide-content">
+              <div class="service-logo">
+                <img src="logos/Rizen-Legal.png" />
+              </div>
+              <h3>ATBP LAW OFFICE</h3>
+              <p>Legal support tailored for real estate, business, and property
+                concerns, ensuring compliance and security in every transaction.
+              </p>
+            </a>
+          </div>
+
+          <!-- RIZEN RENTAL -->
+          <div class="service-slide" style="background-image: url('images/service-rental/service-rental.png');">
+            <a href="service-rental.html" class="service-slide-content">
+              <div class="service-logo"><img src="logos/Rizen-Rental.png" /></div>
+              <h3>RIZEN RENTAL</h3>
+              <p>Reliable and affordable mini dump, bongo, and other vehicle rentals
+                for personal, business, or logistics needs. Available for short and
+                long term use.
+              </p>
+            </a>
+          </div>
+
+          <!-- RIZEN RETAIL -->
+          <div class="service-slide" style="background-image: url('images/service-bakeshop/service-bakery.png');">
+            <a href="service-bakeshop.html" class="service-slide-content">
+              <div class="service-logo">
+                <img src="logos/Rizen-7K.jpg" />
+              </div>
+              <h3>7-KEYS BAKESHOP</h3>
+              <p>Offering high-quality products and excellent service. To provide
+                freshly baked goods, as well as stylish yet affordable apparel to our
+                customers.
+              </p>
+            </a>
+          </div>
+
+          <!-- RIZEN CONSTRUCTION -->
+          <div class="service-slide" style="background-image: url('images/service-construction/service-construction.png');">
+            <a href="service-construction.html" class="service-slide-content">
+              <div class="service-logo">
+                <img src="logos/Rizen-8K.png" />
+              </div>
+              <h3>8K Construction</h3>
+              <p>From design to completion, we provide quality house construction
+                services, offering both skilled labor and high-grade materials to
+                build durable and beautiful homes.
+              </p>
+            </a>
+          </div>
+
+          <!-- RIZEN WATER -->
+          <div class="service-slide" style="background-image: url('images/service-water/service-water.png');">
+            <a href="service-water.html" class="service-slide-content">
+              <div class="service-logo">
+                <img src="logos/Rizen-Water.jpg" />
+              </div>
+              <h3>WATERMELON</h3>
+              <p>Offering clean, mineral-rich drinking water. Our products are
+                high-quality and we provide excellent service to our customers.
+              </p>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- ARROWS -->
+        <button class="arrow left"> &#10094;</button>
+        <button class="arrow right">&#10095;</button>
+
+        <!-- DOTS -->
+        <div class="dots"></div>
+
+      </div>
+    </section>
+    <!-- SERVICE ICONS -->
+    <section class="our-services">
+      <div class="service-list">
+
+        <!-- SERVICE RIZEN -->
+        <a href="#about" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-house.png" class="icon-orange">
+          </div>
+          <div class="service-label">
+            <p>PROPERTY MANAGEMENT</p>
+          </div>
+        </a>
+
+        <!-- SERVICE LEGAL -->
+        <a href="service-legal.html" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-legal.png" class="icon-orange" >
+          </div>
+          <div class="service-label">
+            <p>LEGAL SERVICES</p>
+          </div>
+        </a>
+
+        <!-- SERVICE BAKESHOP -->
+        <a href="service-bakeshop.html" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-bread.png" class="icon-orange">
+          </div>
+          <div class="service-label">
+            <p>RETAIL & BAKESHOP</p>
+          </div>
+        </a>
+
+        <!-- SERVICE WATER -->
+        <a href="service-water.html" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-water.png" class="icon-orange">
+          </div>
+          <div class="service-label">
+            <p>WATER REFILLING</p>
+          </div>
+        </a>
+
+        <!-- SERVICE RENTAL -->
+        <a href="service-rental.html" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-car.png" class="icon-orange">
+          </div>
+          <div class="service-label">
+            <p>VEHICLE RENTAL</p>
+          </div>
+        </a>
+
+        <!-- SERVICE CONSTRUCITON -->
+        <a href="service-construction.html" class="service">
+          <div class="service-icon">
+            <img src="icons/special/w-tools.png" class="icon-orange">
+          </div>
+          <div class="service-label">
+            <p>CONSTRUCTION SERVICES</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <div class="section-strip" id="services" style="justify-content: center; margin-block: 0;"> <p>WHY CHOOSE US</p> </div>
+    
+    <section class="faq-banner"><div class="why-us">
+      <div class="wu-title"><h3>WHY CHOOSE US</h3></div>
+      <div class="wu-box">
+
+        <div class="wu-slot">
+          <img src="icons/deal.svg"                 class="icon-white">
+          <h3>Partnership Oppurtunity</h3>
+          <p>Teaming up with Rizen Group Property Services, Inc. assures property owners that their assets will be cared for in ways that boost both value and satisfaction</p>
+        </div>
+
+        <div class="wu-slot">
+          <img src="icons/location-fat-filled.svg"  class="icon-white">
+          <h3>Mindanao‑Wide Reach</h3>
+          <p>Deep roots in Iligan City paired with an expanding regional network give you on‑the‑ground insights and nationwide opportunities.</p>
+        </div>
+
+        <div class="wu-slot">
+          <img src="icons/message.svg"              class="icon-white">
+          <h3>Value Added Services</h3>
+          <p>Need vehicle rentals, mineral water supply, or retail support on‑site? Our affiliate businesses keep your operations running smoothly.</p>
+        </div>
+
+        <div class="wu-slot">
+          <img src="icons/receipt.svg"              class="icon-white">
+          <h3>End to End Project Support</h3>
+          <p>From land acquisition to backhoe work, house construction, trucking, and backfill—we handle every step so you don’t have to juggle multiple contractors.</p>
+        </div>
+
+      </div>
+    </div></section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section class="faq" id="faq">
+      <div class="faq-banner">
+        <div class="faq-box">
+          <h3>Frequently Asked Questions</h3>
+          <div class="qna">
+
+            <!-- FAQ ITEM -->
+            <div class="faq-item">
+              <div class="faq-question"><p>What services does Rizen Group Property Services, Inc. offer?</p></div>
+              <div class="faq-answer">
+                <p>Our company is proudly diversified, offering services across several key industries. We specialize in real estate services—including buying, selling, leasing, and property management—while also operating a number of other local businesses that serve everyday needs and community development.
+                <br><br>These include:
+                <br>1.) Property Management
+                <br>2.) Vehicle Rentals
+                <br>3.) Trucking Services
+                <br>4.) Backfilling Services
+                <br>5.) Retail Services (Water Refilling and Bakery)
+                <br>6.) Construction Services
+                <br>7.) Legal Services
+              </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>Are you a registered company in the Philippines?</p></div>
+              <div class="faq-answer">
+                <p>Yes, we are a duly registered business in the Philippines. We are compliant with all government regulatory requirements and accredited by the appropriate agencies such as the Department of Trade and Industry (DTI), Securities and Exchange Commission (SEC), and the Bureau of Internal Revenue (BIR).
+                <br><br>For real estate-related services, we follow the guidelines of the Department of Human Settlements and Urban Development (DHSUD) to ensure legitimacy and transparency in every transaction.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>What are your business hours and office location?</p></div>
+              <div class="faq-answer">
+                <p>We are a company based in the Philippines. Our office located at Zone 2, Beltran, Del Carmen, Iligan City.
+                <br><br>Walk-in Office Hours:  Monday to Saturday, 8:00 AM to 5:00 PM.
+              </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>What’s the best way to connect with your team?</p></div>
+              <div class="faq-answer">
+                <p><p>You may contact us through the following channels:
+                <br><br>Mobile:  09367135898
+                <br>Landline:  227-8224
+                <br>Email:  rizen.gpsi@gmail.com
+                <br>Facebook Page:  Rizen Meg
+                <br><br>We encourage clients to message us directly on Facebook or via mobile for faster coordination, especially for scheduling appointments, inquiries, or service requests across our real estate and other business units.
+              </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>How do I start the process of buying a property?</p></div>
+              <div class="faq-answer">
+                <p>Contact us and let us know your preferred property type and budget. We'll schedule a consultation, present available listings, assist with viewings, and guide you through documentation, reservation, financing (if needed), and title transfer.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>Do you offer customized packages or deals for multiple services?</p></div>
+              <div class="faq-answer">
+                <p>Yes! We offer customized packages and special deals depending on your needs, whether it’s combining real estate and construction, or trucking and backfilling. Contact us for personalized offers.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><p>Do you assist with property title transfers?</p></div>
+              <div class="faq-answer">
+                <p>Yes, we do! Rizen Group Property Services, Inc. offers comprehensive legal assistance for the transfer of property titles. Our legal team will guide you through every step of the process—from due diligence and document preparation, to notarization, BIR tax payments, and registration with the Registry of Deeds.
+                <br><br>If you're buying, selling, or inheriting a property, we’ll ensure all requirements are met smoothly and legally, giving you peace of mind throughout the transaction.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section class="connect-section" id="contact">
+      <div class="connect-title"><h3>REACH OUT AT:</h3></div>
+
+      <section class="contact-section">
+
+        <div class="contact">rizen.gpsi@gmail.com     </div>
+        <div class="contact">09367135898              </div>
+        <div class="contact">227-8224                 </div>
+        <div class="contact">Zone 2, Beltran, Del Carmen, Iligan City        </div>
+
+      </section>
+    
+      <section class="social-section">
+        <div class="icon-box">
+          <a href="https://www.facebook.com/rizen.meg" target="_blank">
+            <img src="icons/gmail.svg"            class="icon-black"  >
+          </a>
+          <a href="https://www.facebook.com/rizen.meg" target="_blank">
+            <img src="icons/facebook-square.svg"  class="icon-black"  >
+          </a>
+          <a href="https://www.facebook.com/rizen.meg" target="_blank">
+            <img src="icons/youtube.svg"          class="icon-black"  >
+          </a>
+          <a href="https://www.facebook.com/rizen.meg" target="_blank">
+            <img src="icons/twitter.svg"          class="icon-black"  >
+          </a>
+          <a href="#" onclick="copyWebsiteLink(event)">
+            <img src="icons/share.svg"            class="icon-black" title="Copy website link">
+          </a>
+        </div>
+      </section>
+      
+    </section>
+
+  </div>
+  
+  <!-- BOTTOM -->
+  <footer>
+    <p>&copy; Rizen Group Property Services. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

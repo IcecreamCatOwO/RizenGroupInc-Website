@@ -1,0 +1,291 @@
+/* BODY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #d3d4d5;
+}
+
+/* HEADER */
+@media (max-width: 750px) {
+  header nav a p      {  font-size: .75rem; }
+}
+header a h1 { 
+  transition: 0.3s;
+  color: #851313 !important; }
+header nav a p {
+  margin-inline-start: 15px;
+  color: #851313 !important;
+}
+header nav a p:hover  { color: #ffffff !important; }
+header a h1:hover     { color: #ffffff !important; }
+
+/* HERO */
+.hero {
+  width: 100%;
+  background-color: #ffffff;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 5rem;
+  position: relative;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom, #dd7a8f00 0%, #d3d4d5 99.99%),
+    url('images/service-water/splash.jpg') center/cover no-repeat;
+}
+
+.hero-logo {
+  width: 10rem;
+  height: 10rem;
+
+  margin-block-end: 1rem;
+
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+  transition: transform .75s ease;
+}
+.hero-logo:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+.hero-logo a {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  
+  pointer-events: none;
+}
+.hero-content h3 {
+  color: #851313;
+  font-family: 'Beckman', sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    width: 85%;
+    height: auto;
+
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    justify-self: center;
+
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius:     50px;
+    border-top-right-radius:    50px;
+    border-bottom-left-radius:  25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+.about-top {
+    height: 5rem;
+
+    margin: 0;
+
+    padding: 2rem;
+    border-top: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    /* STRIPED BACKGROUND */
+    
+        background-image: repeating-linear-gradient(
+         /* STRIPE DIRECTION    */      to right,
+         /* COLOR 1             */    #043804,
+         /* COLOR 1 WIDTH       */    #043804 6rem,
+         /* COLOR 2 START       */    #010e01 6rem,
+         /* COLOR 2 END         */    #010e01 12rem
+    );
+
+    background-image: repeating-linear-gradient(
+         /* STRIPE DIRECTION    */      to right,
+         /* COLOR 1             */    #b6342f,
+         /* COLOR 1 WIDTH       */    #b6342f 6rem,
+         /* COLOR 2 START       */    #851313 6rem,
+         /* COLOR 2 END         */    #851313 12rem
+    );
+
+}
+
+.about-box {
+    height: auto;
+
+    margin: 0;
+    
+    padding: 2rem;
+    border-top: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #ffffff;
+}
+.about-box h3 {
+    color: #b6342f;
+    font-family: 'Beckman';
+    font-size: 3rem;
+}
+.about-box p {
+    color: #851313;
+    font-family: 'Beckman';
+    font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .about-box p      {  font-size: .75rem; }
+}
+
+/* MEDIA SECTION */
+.media {
+    padding: .5rem;
+    justify-self: center;
+    margin-block: 7.5rem;
+}
+.media-box {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MEDIA VIDEO */
+.fb-video {
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease;
+}
+.fb-video:hover {
+    transform: translateY(-15px);
+    transition: all 0.5s ease;
+}
+
+/* CONTACT SECTION */
+.contact {
+    color: #851313;
+    font-family: 'Beckman';
+
+    transition: 0.3s;
+}
+@media (max-width: 600px) {
+  .contact h3      {  font-size: 1.5rem !important; }
+}
+.contact {
+    width: 60%;
+    height: auto;
+    padding-block: 5rem;
+
+    z-index: 1;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-self: center;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-top-left-radius:     50px;
+    border-top-right-radius:    50px;
+    border-bottom-left-radius:  25px;
+    border-bottom-right-radius: 25px;
+    border: 0.25rem solid #851313;
+}
+.contact-box {
+    width: 100%;
+
+    justify-self: right;
+
+    text-align: center;
+    text-shadow: none;
+
+    overflow: hidden;
+    background-color: #ffffff;
+}
+@media (max-width: 600px) {
+  .contact-box h3      {  font-size: 1.5rem !important; }
+}
+
+/* CONTACT BOXES */
+.box-left, .box-right {
+    width: 110%;
+    position: relative;
+    transform: translateX(0);
+
+    overflow: hidden;
+
+    cursor: pointer;
+    transition: all 0.75s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.box-left {
+    justify-self: left;
+    margin-block-end: 3rem;
+
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+.box-right {
+    justify-self: right;
+    
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 25px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+/* BOX-HOVER */
+.box-left:hover, .box-right:hover {
+    transform: translateY(-0.5rem);
+}
+/* CONTACT CONTENT */
+.contact-top {
+    height: 3rem;
+    background-image: repeating-linear-gradient(
+         /* STRIPE DIRECTION    */      to right,
+         /* COLOR 1             */    #851313,
+         /* COLOR 1 WIDTH       */    #851313 3rem,
+         /* COLOR 2 START       */    #b6342f 3rem,
+         /* COLOR 2 END         */    #b6342f 6rem
+    );
+}
+.contact-text {
+    padding-block: 1rem;
+    padding-inline: 0.25rem;
+    
+    color: #851313;
+}
+/* FOOTER */
+footer {
+    color: #ffe1e0              !important;
+    background-color: #851313   !important;
+}

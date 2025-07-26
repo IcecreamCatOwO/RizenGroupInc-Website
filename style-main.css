@@ -1,0 +1,179 @@
+/* FONTS */
+@font-face {
+font-family: 'Classica-Book';
+  src: url('fonts/Classica-Book.ttf') format('TrueType');
+}
+@font-face {
+  font-family: 'Beckman';
+  src: url('fonts/Beckman.otf') format('OpenType');
+}
+@font-face {
+  font-family: 'Gravity-Light';
+  src: url('fonts/Gravity-Light.otf') format('OpenType');
+}
+@font-face {
+  font-family: 'Gravity-UltraLight';
+  src: url('fonts/Gravity-UltraLight.otf') format('OpenType');
+}
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('fonts/CaviarDreams.ttf') format('TrueType');
+}
+
+
+/* ICONS */
+img.icon-white    { filter: brightness(0) invert(1); }
+img.icon-gray     { filter: brightness(0) saturate(100%) invert(81%) sepia(1%)  saturate(0%)    hue-rotate(185deg)  brightness(75%)   contrast(96%);  }
+img.icon-yellow   { filter: brightness(0) saturate(100%) invert(53%) sepia(86%) saturate(1222%) hue-rotate(-2deg)   brightness(97%)   contrast(101%); }
+img.icon-gold     { filter: brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1000%) hue-rotate(8deg)    brightness(90%)    contrast(105%); }
+img.icon-orange   { filter: brightness(0) saturate(100%) invert(41%) sepia(94%) saturate(2245%) hue-rotate(0deg)    brightness(104%)  contrast(107%); }
+img.icon-brown    { filter: brightness(0) saturate(100%) invert(22%) sepia(85%) saturate(1730%) hue-rotate(4deg)    brightness(96%)   contrast(106%); }
+img.icon-green-1  { filter: brightness(0) saturate(100%) invert(11%) sepia(95%) saturate(735%)  hue-rotate(63deg)   brightness(90%)   contrast(105%); }
+img.icon-green-2  { filter: brightness(0) saturate(100%) invert(20%) sepia(75%) saturate(680%)  hue-rotate(62deg)   brightness(90%)   contrast(95%);  }
+
+/* STRIPS */
+.section-line {
+  width: 100%;
+  height: 3px;
+  background-color: #030a03;
+  z-index: 2;
+}
+.section-strip {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  background-color: #040a03;
+
+  margin-block-start: 5rem;
+  margin-block-end: -5rem;
+
+  color: #E4DDD9;
+  font-family: 'Classica-Book';
+  font-size: 1.25rem;
+  text-align: center;
+
+  z-index: 3;
+  display: flex;
+  cursor: pointer;
+}
+.section-strip nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+/* MAIN NAV */
+.main-nav {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.main-nav p  {
+    font-size: 1.5rem !important;
+}
+/* OTHER NAVS */
+.other-navs {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.other-navs p {
+    font-size: 0.75rem !important;
+    margin-inline-start: 2rem;
+}
+/* DECORATION */
+nav p:hover {
+  color: #B86200;
+  transition: 0.3s;
+}
+nav p.active {
+  color: #B86200;
+}
+@media (max-width: 750px) {
+  .section-strip  { padding-inline: 10px; }
+  .main-nav p     { font-size: 0.75rem !important; margin-inline: 5px !important; }
+  .other-navs p   { font-size: 0.50rem !important; margin-inline: 5px !important; }
+}
+
+.green-strip {
+  width: 100%;
+  height: 5rem;
+  background-color: #030a03;
+}
+.white-strip {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-focus-ring-color: transparent;
+  outline: none; 
+}
+
+/* HEADER */
+header { 
+    width: 100%;
+    height: 5rem;
+    
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+
+    padding-inline-start: 2rem;
+    background: transparent;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Beckman'; 
+    font-size: .9rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/* HEADER NAVIGATION */
+header nav {
+    display: flex;
+    margin-inline-end: 2rem;
+    font-size: 1rem;
+}
+header nav a { 
+    color: #E4DDD9;
+    font-family: 'Classica-Book'; 
+    text-decoration: none;
+}
+@media (max-width: 750px) {
+  header nav a { margin-inline-start: 15px !important; }
+  header nav a p      {  font-size: 2vw; }
+}
+
+/* FOOTER */
+footer {
+  bottom: -10%;
+  margin-top: 3rem;
+
+  padding: .75rem;
+  background-color: #040A03;
+
+  color: #C3B4AC;
+  font-family: 'Classica-Book';
+  font-size: .8rem;
+  text-align: center; 
+}
