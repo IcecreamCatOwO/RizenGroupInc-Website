@@ -264,6 +264,28 @@ document.querySelectorAll('.main-nav p, .other-navs p').forEach((tab) => {
   });
 });
 
+// POPUP MODAL ////////////////////////////////////////////////////////////////////////
+const popup = document.getElementById('image-popup');
+const popupImg = document.getElementById('popup-img');
+const closeBtn = document.querySelector('.close-btn');
+
+document.querySelectorAll('.lot-project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const bgImage = card.style.backgroundImage;
+    const imageUrl = bgImage.slice(5, -2); // remove `url("...")`
+    popupImg.src = imageUrl;
+    popup.style.display = 'flex';
+  });
+});
+
+closeBtn.onclick = () => { popup.style.display = 'none'; };
+
+window.onclick = (e) => {
+  if (e.target === popup) {
+    popup.style.display = 'none';
+  }
+};
+
 // AGENT IMAGES ////////////////////////////////////////////////////////////////////////
 window.addEventListener('DOMContentLoaded', () => {
   const agentImages = document.querySelectorAll('.agent-image');
@@ -579,4 +601,5 @@ document.addEventListener('DOMContentLoaded', () => {
       btnMore.style.display = 'none';
     }
   });
+
 });
